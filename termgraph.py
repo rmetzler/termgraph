@@ -101,6 +101,7 @@ def read_data(filename):
     for line in f:
         line = line.strip()
         if line:
+            # print(line)
             if not line.startswith('#'):
                 if line.find(",") > 0:
                     cols = line.split(',')
